@@ -36,5 +36,9 @@ public class Fact
         return this.description;
     }
 
+    public boolean getValueById(String id)
+    {
+        return this.valueMap.get(id);
+    }
 
 }
