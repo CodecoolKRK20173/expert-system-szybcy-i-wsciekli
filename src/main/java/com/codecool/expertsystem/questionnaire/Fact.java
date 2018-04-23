@@ -9,7 +9,7 @@ import java.util.Set;
  */
 public class Fact
 {
-    private final Map<String, boolean> valueMap;
+    private Map<String, boolean> valueMap;
     private final String description;
     private final String id;
     private boolean value;
