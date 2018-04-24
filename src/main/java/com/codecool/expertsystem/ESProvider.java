@@ -1,5 +1,8 @@
 package com.codecool.expertsystem;
 
+/**
+ * Class representing Expert System Provider.
+ */
 public class ESProvider {
     private FactParser factParser;
     private RuleParser ruleParser;
@@ -19,7 +22,7 @@ public class ESProvider {
 
     public void collectAnswers() {
 
-        //TODO: implememnt
+        //TODO: implement
 
     }
 
