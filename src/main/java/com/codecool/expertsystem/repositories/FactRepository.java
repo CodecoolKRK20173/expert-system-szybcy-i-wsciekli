@@ -1,8 +1,10 @@
 package com.codecool.expertsystem.repositories;
 
+import com.codecool.expertsystem.iterators.FactIterator;
 import com.codecool.expertsystem.questionnaire.Fact;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class FactRepository {
