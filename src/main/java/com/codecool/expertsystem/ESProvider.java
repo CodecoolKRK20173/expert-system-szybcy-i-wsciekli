@@ -1,5 +1,7 @@
 package com.codecool.expertsystem;
 
+import com.codecool.expertsystem.questionnaire.Answer;
+
 public class ESProvider {
     private FactParser factParser;
     private RuleParser ruleParser;
