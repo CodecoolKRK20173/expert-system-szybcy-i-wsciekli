@@ -7,11 +7,10 @@ import java.util.List;
 
 public class FactRepository {
 
-    private Iterator factIterator;
+
     private List<Fact> factsList;
 
     public FactRepository() {
-        this.factIterator = getIterator();
         this.factsList = new ArrayList<>();
     }
 
