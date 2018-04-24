@@ -16,10 +16,7 @@ public class QuestionIterator implements Iterator {
     }
 
     public boolean hasNext() {
-        if (index < this.questionList.size()) {
-            return true;
-        }
-        return false;
+        return index < this.questionList.size()
     }
 
     public Question next() {
