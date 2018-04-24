@@ -1,5 +1,7 @@
 package com.codecool.expertsystem;
 
+import com.codecool.expertsystem.questionnaire.Answer;
+
 /**
  * Class representing Expert System Provider.
  */
