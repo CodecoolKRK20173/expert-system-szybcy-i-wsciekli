@@ -12,9 +12,10 @@ public class Question
     public Question(String id, String question, Answer answer)
     {
         this.id = id;
-        this.question = question;
         this.Answer = answer;
+        this.question = question;
     }
+
 
     public String getId()
     {
@@ -28,13 +29,12 @@ public class Question
 
     public Answer getAnswer()
     {
-        return answer;
+        return this.answer;
     }
 
     public boolean getEvaluatedAnswer(String input)
     {
-        return false;
-        //TODO: implemement
+        return answer.evaluateAnswerByInput(input);
     }
 
 }
