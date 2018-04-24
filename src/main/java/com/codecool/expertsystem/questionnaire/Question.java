@@ -12,7 +12,7 @@ public class Question
     public Question(String id, String question, Answer answer)
     {
         this.id = id;
-        this.Answer = answer;
+        this.answer = answer;
         this.question = question;
     }
 
