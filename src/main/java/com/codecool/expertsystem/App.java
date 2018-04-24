@@ -1,6 +1,5 @@
 package com.codecool.expertsystem;
 
-
 /**
  * Hello world!
  *
