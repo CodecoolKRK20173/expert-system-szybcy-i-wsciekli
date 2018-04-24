@@ -5,5 +5,5 @@ import com.codecool.expertsystem.questionnaire.Fact;
 public interface Iterator {
 
     boolean hasNext();
-    Fact next();
+    Object next();
 }
