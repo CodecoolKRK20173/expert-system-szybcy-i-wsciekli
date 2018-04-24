@@ -15,13 +15,13 @@ public class FactIterator implements Iterator {
 
     public boolean hasNext() {
 
-        if (index < factsList.size()) {
+        if (index < this.factsList.size()) {
             return true;
         }
         return false;
     }
 
     public Fact next() {
-        return factsList.get(index++);
+        return this.factsList.get(index++);
     }
 }
