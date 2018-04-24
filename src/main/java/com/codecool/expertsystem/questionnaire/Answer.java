@@ -8,7 +8,12 @@ public class Answer {
     private List<Value> valuesList;
 
     public boolean evaluateAnswerByInput(String input) {
-        // TODO implement
+        for (Value value : valuesList) {
+            if (value.getInputPattern().contains(input)) {
+                return true;
+            }
+        }
+
         return false;
     }
 
