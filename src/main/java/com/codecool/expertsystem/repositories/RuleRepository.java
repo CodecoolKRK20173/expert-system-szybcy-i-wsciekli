@@ -3,19 +3,19 @@ package com.codecool.expertsystem.repositories;
 import com.codecool.expertsystem.iterators.QuestionIterator;
 import com.codecool.expertsystem.questionnaire.Question;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class RuleRepository {
 
-    private List<Question> questionList;
+    private Map<String, Question> questionMap;
 
     public RuleRepository() {
-        this.questionList = new ArrayList<>();
+        this.questionMap = new HashMap<>();
     }
 
     public void addQuestion(Question question) {
-        this.questionList.add(question);
+        this.questionMap.put(question.getId(), question);
     }
 
     public Iterator<Question> getIterator() {
