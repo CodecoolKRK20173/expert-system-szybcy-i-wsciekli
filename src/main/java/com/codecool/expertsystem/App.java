@@ -1,5 +1,8 @@
 package com.codecool.expertsystem;
 
+import com.codecool.expertsystem.parsers.FactParser;
+import com.codecool.expertsystem.parsers.XMLParser;
+
 /**
  * Hello world!
  *
@@ -8,6 +11,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        XMLParser parser = new FactParser();
+        ((FactParser) parser).createFacts();
     }
 }
