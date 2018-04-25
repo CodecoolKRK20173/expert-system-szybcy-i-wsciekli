@@ -16,7 +16,7 @@ public class QuestionIterator implements Iterator {
     }
 
     public boolean hasNext() {
-        return index < this.questionList.size()
+        return index < this.questionList.size();
     }
 
     public Question next() {
