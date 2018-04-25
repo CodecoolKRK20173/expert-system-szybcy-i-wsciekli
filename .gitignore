@@ -37,6 +37,8 @@ hs_err_pid*
 log/
 logs/
 
+-# Other
+-*.ods
 
 #---------------------------------------#
 # IDEs & Editors Ignores                #
