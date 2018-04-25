@@ -10,13 +10,10 @@ import java.util.List;
 
 public class RuleParser extends XMLParser{
 
-    private RuleRepository  = new RuleRepository();
-
     public RuleRepository getRuleRepository() {
-        return ruleRepository;
-    }
 
-    public void parse() {
+        RuleRepository  = new RuleRepository();
+
         super.loadXMLdocument("src/resources/rules.xml");
 
         NodeList rulesList = doc.getElementsByTagName("Rule");
@@ -69,6 +66,7 @@ public class RuleParser extends XMLParser{
             ruleRepository.addQuestion(question);
         }
 
+        return ruleRepository;
     }
 
     private String getAnswer(NodeList answersList){
