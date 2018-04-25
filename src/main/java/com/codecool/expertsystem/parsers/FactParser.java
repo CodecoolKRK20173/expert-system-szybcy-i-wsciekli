@@ -1,19 +1,17 @@
 package com.codecool.expertsystem.parsers;
 
 import com.codecool.expertsystem.questionnaire.Fact;
+import com.codecool.expertsystem.repositories.FactRepository;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class FactParser extends XMLParser {
 
-    private FactRepository factRepository;
-
     public FactRepository getFactRepository() {
-        return factRepository;
-    }
 
-    public void createFacts() {
+        FactRepository factRepository = new FactRepository();
+
         super.loadXMLdocument("src/resources/facts.xml");
         NodeList factList = doc.getElementsByTagName("Fact");
 
@@ -43,10 +41,9 @@ public class FactParser extends XMLParser {
 
                 fact.setFactValueById(evalId, value);
             }
-
             factRepository.addFact(fact);
         }
 
+        return factRepository;
     }
-
 }
