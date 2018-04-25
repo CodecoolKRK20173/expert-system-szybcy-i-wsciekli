@@ -2,6 +2,9 @@ package com.codecool.expertsystem;
 
 import com.codecool.expertsystem.questionnaire.Answer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Class representing Expert System Provider.
  */
