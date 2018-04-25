@@ -15,7 +15,7 @@ public class FactIterator implements Iterator {
 
     public boolean hasNext() {
 
-        return index < this.factsList.size()
+        return index < this.factsList.size();
       
     }
 
