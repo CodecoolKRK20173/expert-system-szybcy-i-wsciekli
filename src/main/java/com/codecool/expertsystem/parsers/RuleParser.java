@@ -1,6 +1,9 @@
 package com.codecool.expertsystem.parsers;
 
 import com.codecool.expertsystem.questionnaire.Question;
+import com.codecool.expertsystem.questionnaire.value.*;
+import com.codecool.expertsystem.questionnaire.Answer;
+import com.codecool.expertsystem.repositories.RuleRepository;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
