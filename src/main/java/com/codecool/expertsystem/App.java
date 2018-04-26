@@ -15,10 +15,12 @@ public class App
 
         ESProvider esProvider = new ESProvider(factParser, ruleParser);
 
+        Display.printTitleMenu();
+
         esProvider.collectAnswers();
         try {
-            System.out.println(esProvider.evaluate());
+            Display.printMessage("We found car/s for you:\n" + esProvider.evaluate());
         } catch (Exception e) {
-            System.out.println("Cars out of bounds exceptionno");
+            Display.printMessage("There is no car matching your requirements.");
         }
     }}
