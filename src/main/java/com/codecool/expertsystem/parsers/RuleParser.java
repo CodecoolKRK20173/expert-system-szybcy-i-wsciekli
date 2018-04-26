@@ -12,6 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class RuleParser extends XMLParser{
+    Answer answer = new Answer();
 
     public RuleRepository getRuleRepository() {
 
@@ -23,7 +24,6 @@ public class RuleParser extends XMLParser{
 
         for (int i = 0; i < rulesList.getLength(); i++) {
 
-            Answer answer = new Answer();
 
             Node rule = rulesList.item(i);
             Element ruleElement = (Element) rule;
