@@ -4,41 +4,41 @@ package com.codecool.expertsystem.questionnaire;
  * Class representing question.
  */
 public class Question {
-    
-    private final String id;
-    private final String question;
-    private Answer answer;
+
+    private final String ID;
+    private final String QUESTION;
+    private final Answer ANSWER;
 
     public Question(String id, String question, Answer answer) {
 
-        this.id = id;
-        this.answer = answer;
-        this.question = question;
+        this.ID = id;
+        this.ANSWER = answer;
+        this.QUESTION = question;
 
     }
 
 
     public String getId() {
 
-        return this.id;
+        return this.ID;
 
     }
 
     public String getQuestion() {
 
-        return this.question;
+        return this.QUESTION;
 
     }
 
     public Answer getAnswer() {
 
-        return this.answer;
+        return this.ANSWER;
 
     }
 
     public boolean getEvaluatedAnswer(String input) {
 
-        return answer.evaluateAnswerByInput(input);
+        return ANSWER.evaluateAnswerByInput(input);
 
     }
 }
