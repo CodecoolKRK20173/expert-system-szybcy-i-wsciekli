@@ -61,8 +61,26 @@ public class ESProvider {
 
     }
 
-    public String evaluate() {
-        return ""; //TODO: implement
+    public String evaluate() throws Exception {
+        String cars = "";
+        Iterator<Fact> factIterator = factRepository.getIterator();
+        while (factIterator.hasNext()) {
+            int thisCar = 0;
+            Fact factTemp = factIterator.next();
+            for (Map.Entry<String, Boolean> entry : answersMap.entrySet()) {
+                String id = entry.getKey();
+                boolean value = entry.getValue();
+                if (value == factTemp.getValueById(id)) {
+                    thisCar++;
+                }
+            }
+            if (thisCar == answersMap.size()) {
+                cars += factTemp.getDescription() + "\n";
+            }
+        }
+        if (cars.equals(""))
+            throw new Exception("sdfsgfh");
+        return cars;
     }
 
 
