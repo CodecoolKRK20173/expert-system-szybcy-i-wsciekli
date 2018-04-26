@@ -59,4 +59,44 @@
             <Eval id="luxury">false</Eval>
         </Evals>
     </Fact>
+
+    <Fact id="Polonez">
+        <Description value="Polonez Caro"/>
+        <Evals>
+            <Eval id="family">true</Eval>
+            <Eval id="money">false</Eval>
+            <Eval id="comfort">false</Eval>
+            <Eval id="luxury">false</Eval>
+        </Evals>
+    </Fact>
+
+    <Fact id="Lamgorghini">
+        <Description value="Lamborghini Gallardo"/>
+        <Evals>
+            <Eval id="family">false</Eval>
+            <Eval id="money">true</Eval>
+            <Eval id="comfort">true</Eval>
+            <Eval id="luxury">true</Eval>
+        </Evals>
+    </Fact>
+
+    <Fact id="Opel">
+        <Description value="Opel Calibra"/>
+        <Evals>
+            <Eval id="family">false</Eval>
+            <Eval id="money">false</Eval>
+            <Eval id="comfort">true</Eval>
+            <Eval id="luxury">true</Eval>
+        </Evals>
+    </Fact>
+
+    <Fact id="Mercedes">
+        <Description value="Mercedes W210"/>
+        <Evals>
+            <Eval id="family">true</Eval>
+            <Eval id="money">false</Eval>
+            <Eval id="comfort">true</Eval>
+            <Eval id="luxury">false</Eval>
+        </Evals>
+    </Fact>
 </Facts>
