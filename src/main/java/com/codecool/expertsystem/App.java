@@ -10,6 +10,7 @@ public class App {
     public static void main( String[] args ) {
         String answer;
         ESProvider esProvider = new ESProvider(new FactParser(), new RuleParser());
+        
         do {
 
             esProvider.resetAnswers();

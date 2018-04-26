@@ -36,11 +36,11 @@ public class ESProvider {
 
     }
 
-public void resetAnswers() {
+    public void resetAnswers() {
 
-    answersMap = new HashMap<>();
+        answersMap = new HashMap<>();
 
-}
+    }
 
     public void collectAnswers() {
 
