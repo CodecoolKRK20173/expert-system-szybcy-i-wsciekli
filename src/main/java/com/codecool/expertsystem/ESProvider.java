@@ -57,12 +57,6 @@ public class ESProvider {
 
     }
 
-    public boolean getAnswerByQuestion(String questionID) {
-
-        return answersMap.get(questionID);
-
-    }
-
     public String evaluate() throws CarNotInXmlException {
 
         String cars = "";
