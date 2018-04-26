@@ -17,26 +17,27 @@ import java.util.Scanner;
  * Class representing Expert System Provider.
  */
 public class ESProvider {
-    private FactParser factParser;
-    private RuleParser ruleParser;
-    private RuleRepository ruleRepository;
-    private FactRepository factRepository;
+
+    private final FactParser FACT_PARSER;
+    private final RuleParser RULE_PARSER;
+    private final RuleRepository RULE_REPOSITORY;
+    private final FactRepository FACT_REPOSITORY;
     private String input;
 
     private Map<String, Boolean> answersMap = new HashMap<>();
 
     public ESProvider(FactParser factParser, RuleParser ruleParser) {
 
-        this.ruleParser = ruleParser;
-        this.factParser = factParser;
-        this.ruleRepository = ruleParser.getRuleRepository();
-        this.factRepository = factParser.getFactRepository();
+        this.RULE_PARSER = ruleParser;
+        this.FACT_PARSER = factParser;
+        this.RULE_REPOSITORY = RULE_PARSER.getRuleRepository();
+        this.FACT_REPOSITORY = FACT_PARSER.getFactRepository();
 
     }
 
     public void collectAnswers() {
 
-        Iterator<Question> questionIterator = ruleRepository.getIterator();
+        Iterator<Question> questionIterator = RULE_REPOSITORY.getIterator();
 
         while (questionIterator.hasNext()) {
 
@@ -58,7 +59,7 @@ public class ESProvider {
     public String evaluate() throws Exception {
 
         String cars = "";
-        Iterator<Fact> factIterator = factRepository.getIterator();
+        Iterator<Fact> factIterator = FACT_REPOSITORY.getIterator();
 
         while (factIterator.hasNext()) {
 
