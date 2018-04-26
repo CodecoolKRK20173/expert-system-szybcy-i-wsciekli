@@ -25,12 +25,6 @@ public class Fact {
     private void initializeMap() {
 
         this.valueMap = new HashMap<>();
-
-        this.valueMap.put("family", false);
-        this.valueMap.put("money", false);
-        this.valueMap.put("comfort", false);
-        this.valueMap.put("luxury", false);
-
     }
 
     public Set<String> getIdSet() {
