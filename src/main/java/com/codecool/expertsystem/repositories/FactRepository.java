@@ -21,6 +21,6 @@ public class FactRepository {
     }
 
     public Iterator<Fact> getIterator() {
-        return new FactIterator;
+        return new FactIterator(factsList);
     }
 }
