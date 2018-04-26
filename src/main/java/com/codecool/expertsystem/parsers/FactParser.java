@@ -41,7 +41,7 @@ public class FactParser extends XMLParser {
 
                 fact.setFactValueById(evalId, value);
             }
-            factRepository.addFact(fact);
+            factRepository.addFacts(fact);
         }
 
         return factRepository;

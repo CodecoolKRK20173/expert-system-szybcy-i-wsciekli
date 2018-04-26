@@ -4,6 +4,7 @@ import com.codecool.expertsystem.iterators.FactIterator;
 import com.codecool.expertsystem.questionnaire.Fact;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class FactRepository {
@@ -20,6 +21,6 @@ public class FactRepository {
     }
 
     public Iterator<Fact> getIterator() {
-        return new FactIterator;
+        return new FactIterator(factsList);
     }
 }
