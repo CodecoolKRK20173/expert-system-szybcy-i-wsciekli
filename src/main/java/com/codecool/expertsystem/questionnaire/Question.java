@@ -30,12 +30,6 @@ public class Question {
 
     }
 
-    public Answer getAnswer() {
-
-        return this.ANSWER;
-
-    }
-
     public boolean getEvaluatedAnswer(String input) {
 
         return ANSWER.evaluateAnswerByInput(input);
