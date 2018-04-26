@@ -4,6 +4,7 @@ import com.codecool.expertsystem.iterators.QuestionIterator;
 import com.codecool.expertsystem.questionnaire.Question;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class RuleRepository {
