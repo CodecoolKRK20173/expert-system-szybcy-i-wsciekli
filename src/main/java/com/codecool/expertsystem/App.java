@@ -10,11 +10,8 @@ import com.codecool.expertsystem.parsers.RuleParser;
 public class App {
     
     public static void main( String[] args ) {
-        FactParser factParser = new FactParser();
-        RuleParser ruleParser = new RuleParser();
 
-        ESProvider esProvider = new ESProvider(factParser, ruleParser);
-
+        ESProvider esProvider = new ESProvider(new FactParser(), new RuleParser());
         Display.printTitleMenu();
         esProvider.collectAnswers();
 
