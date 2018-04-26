@@ -8,6 +8,7 @@ import com.codecool.expertsystem.questionnaire.Fact;
 import com.codecool.expertsystem.questionnaire.Question;
 import com.codecool.expertsystem.repositories.FactRepository;
 import com.codecool.expertsystem.repositories.RuleRepository;
+import com.codecool.expertsystem.error.CarNotInXmlException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -56,7 +57,7 @@ public class ESProvider {
 
     }
 
-    public String evaluate() throws Exception {
+    public String evaluate() throws CarNotInXmlException {
 
         String cars = "";
         Iterator<Fact> factIterator = FACT_REPOSITORY.getIterator();
@@ -81,7 +82,7 @@ public class ESProvider {
         }
 
         if (cars.equals(""))
-            throw new Exception("sdfsgfh");
+            throw new CarNotInXmlException("Not found car in our system.");
         return cars;
 
     }
