@@ -9,7 +9,7 @@ import java.util.Set;
  */
 
 public class Fact {
-    
+
     private Map<String, Boolean> valueMap;
     private final String DESCRIPTION;
     private final String ID;
@@ -25,11 +25,6 @@ public class Fact {
     private void initializeMap() {
 
         this.valueMap = new HashMap<>();
-    }
-
-    public Set<String> getIdSet() {
-
-        return this.valueMap.keySet();
 
     }
 

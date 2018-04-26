@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Rules>
     <Rule id="money">
-        <Question>Do you have 20.000.000 HUF for a car? (Yes or No)</Question>
+        <Question>Do you have 20.000.000 PLN for a car? (Yes or No)</Question>
         <Answer>
             <Selection value="true">
                 <SingleValue value="yes"/>
@@ -25,7 +25,7 @@
     </Rule>
 
     <Rule id="luxury">
-        <Question>What feature is must-have for you? (gps,bluetooth,dvd,automatic transmission,self-driving,nothing,abs,fog lights,central lock) </Question>
+        <Question>What feature is must-have for you? (gps, bluetooth, dvd, automatic transmission ,self-driving, nothing, abs, fog lights ,central lock) </Question>
         <Answer>
             <Selection value="true">
                 <MultipleValue value="gps,bluetooth,dvd,automatic transmission,self-driving"/>
@@ -37,7 +37,7 @@
     </Rule>
 
     <Rule id="family">
-        <Question>Is the car supposed to be family? (Yes or No)</Question>
+        <Question>Is the car supposed to be family-friendly? (Yes or No)</Question>
         <Answer>
             <Selection value="true">
                 <MultipleValue value="yes"/>
