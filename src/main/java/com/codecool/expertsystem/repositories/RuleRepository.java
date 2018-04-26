@@ -2,9 +2,6 @@ package com.codecool.expertsystem.repositories;
 import com.codecool.expertsystem.iterators.QuestionIterator;
 import com.codecool.expertsystem.questionnaire.Question;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
 import java.util.*;
 
 public class RuleRepository {
