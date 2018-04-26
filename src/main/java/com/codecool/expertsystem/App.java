@@ -1,5 +1,6 @@
 package com.codecool.expertsystem;
 
+import com.codecool.expertsystem.view.Display;
 import com.codecool.expertsystem.parsers.FactParser;
 import com.codecool.expertsystem.parsers.RuleParser;
 import com.codecool.expertsystem.error.CarNotInXmlException;

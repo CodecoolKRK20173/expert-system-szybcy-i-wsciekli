@@ -9,6 +9,7 @@ import com.codecool.expertsystem.questionnaire.Question;
 import com.codecool.expertsystem.repositories.FactRepository;
 import com.codecool.expertsystem.repositories.RuleRepository;
 import com.codecool.expertsystem.error.CarNotInXmlException;
+import com.codecool.expertsystem.view.Display;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
