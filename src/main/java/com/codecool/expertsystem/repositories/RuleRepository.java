@@ -5,10 +5,12 @@ import com.codecool.expertsystem.questionnaire.Question;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.*;
 
 public class RuleRepository {
 
     private Map<String, Question> questionMap;
+
 
     public RuleRepository() {
         this.questionMap = new HashMap<>();
@@ -19,6 +21,14 @@ public class RuleRepository {
     }
 
     public Iterator<Question> getIterator() {
-        return new QuestionIterator;
+        return new QuestionIterator(getQuestionList());
+    }
+
+    private List<Question> getQuestionList() {
+        List<Question> keyList = new ArrayList<>();
+        for (String key : questionMap.keySet()) {
+            keyList.add(questionMap.get(key));
+        }
+        return keyList;
     }
 }
