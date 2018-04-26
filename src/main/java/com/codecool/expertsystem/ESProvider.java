@@ -41,17 +41,14 @@ public class ESProvider {
 
 
     public void collectAnswers() {
-        Scanner userInput = new Scanner(System.in);
-
         Iterator<Question> questionIterator = ruleRepository.getIterator();
 
         while (questionIterator.hasNext()) {
             Question nextQuestion = questionIterator.next();
-            System.out.println(nextQuestion.getQuestion());
-            String input = userInput.nextLine();
+            String input = Display.getStringInput(nextQuestion.getQuestion());
             boolean evaluatedAnswer = nextQuestion.getEvaluatedAnswer(input);
-
             answersMap.put(nextQuestion.getId(), evaluatedAnswer);
+
         }
 
     }
