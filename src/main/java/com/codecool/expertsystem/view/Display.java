@@ -24,12 +24,12 @@ public class Display {
 
         Scanner userInput = new Scanner(System.in);
         System.out.println(message);
-        return userInput.nextLine();
+        return userInput.nextLine().toLowerCase();
 
     }
 
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
-        System.out.flush();  
+        System.out.flush();
 }
 }

@@ -37,6 +37,12 @@ public class ESProvider {
 
     }
 
+public void resetAnswers() {
+
+    answersMap = new HashMap<>();
+
+}
+
     public void collectAnswers() {
 
         Iterator<Question> questionIterator = RULE_REPOSITORY.getIterator();
