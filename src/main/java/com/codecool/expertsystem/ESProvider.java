@@ -4,7 +4,9 @@ import com.codecool.expertsystem.iterators.QuestionIterator;
 import com.codecool.expertsystem.parsers.FactParser;
 import com.codecool.expertsystem.parsers.RuleParser;
 import com.codecool.expertsystem.questionnaire.Answer;
+import com.codecool.expertsystem.questionnaire.Fact;
 import com.codecool.expertsystem.questionnaire.Question;
+import com.codecool.expertsystem.repositories.FactRepository;
 import com.codecool.expertsystem.repositories.RuleRepository;
 
 import java.util.HashMap;
@@ -19,6 +21,7 @@ public class ESProvider {
     private FactParser factParser;
     private RuleParser ruleParser;
     private RuleRepository ruleRepository;
+    private FactRepository factRepository;
     private String input;
 
     private Map<String, Boolean> answersMap = new HashMap<>();
@@ -29,6 +32,7 @@ public class ESProvider {
         this.factParser = factParser;
 
         this.ruleRepository = ruleParser.getRuleRepository();
+        this.factRepository = factParser.getFactRepository();
 
 
 
