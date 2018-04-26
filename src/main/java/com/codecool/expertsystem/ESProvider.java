@@ -24,7 +24,6 @@ public class ESProvider {
     private final RuleParser RULE_PARSER;
     private final RuleRepository RULE_REPOSITORY;
     private final FactRepository FACT_REPOSITORY;
-    private String input;
 
     private Map<String, Boolean> answersMap = new HashMap<>();
 
