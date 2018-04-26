@@ -14,6 +14,7 @@ public class App {
     public static void main( String[] args ) {
 
         ESProvider esProvider = new ESProvider(new FactParser(), new RuleParser());
+        Display.clearScreen();
         Display.printTitleMenu();
         esProvider.collectAnswers();
 
