@@ -15,7 +15,7 @@ public class RuleParser extends XMLParser{
 
     public RuleRepository getRuleRepository() {
 
-        RuleRepository  = new RuleRepository();
+        RuleRepository ruleRepository = new RuleRepository();
 
         super.loadXMLdocument("src/resources/rules.xml");
 
@@ -49,16 +49,15 @@ public class RuleParser extends XMLParser{
                     String answerString = getAnswer(answersList);
                     List<String> possibleAnswers = Arrays.asList(answerString.split(","));
 
-                    Value value = new MultipleValue(possibleAnswers, selectionValue);
+                    Value value = new MultipleValue(possibleAnswers, selectionType);
+                    answer.addValue(value);
 
                 }else{
 
                     String answerString = getAnswer(answersList);
-                    Value value = new SingleValue(answerString, selectionValue);
-
+                    Value value = new SingleValue(answerString, selectionType);
+                    answer.addValue(value);
                 }
-
-                answer.addValue(value);
             }
 
             String ruleId = ruleElement.getAttribute("id");
