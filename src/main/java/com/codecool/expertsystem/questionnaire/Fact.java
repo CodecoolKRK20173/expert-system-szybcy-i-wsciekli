@@ -28,12 +28,6 @@ public class Fact {
 
     }
 
-    public Set<String> getIdSet() {
-
-        return this.valueMap.keySet();
-
-    }
-
     public void setFactValueById(String id, boolean value) {
 
         this.valueMap.put(id, value);
