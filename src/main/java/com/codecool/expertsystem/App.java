@@ -27,7 +27,7 @@ public class App {
                 Display.printMessage("There is no car matching your requirements.");
             }
             finally{
-                answer = Display.getStringInput("do you want to answer questions again? (Y/N)");
+                answer = Display.getStringInput("do you want to answer questions again? (y/n)");
             }
 
         } while (answer.equals("y"));
